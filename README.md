@@ -13,7 +13,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import {createStore, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
-import {componentsReducer} from '..';
+import {componentsReducer} from 'modular-react-redux';
 import appReducer from './appReducer';
 import CounterComponent from './CounterComponent';
 
@@ -37,7 +37,7 @@ and this then allows you to create a component (a counter component in this exam
 /* @flow */
 
 import React from 'react';
-import {connectModule} from 'modular-react-redux';
+import {modularConnect} from 'modular-react-redux';
 
 type PropsType = {
   count: number,
